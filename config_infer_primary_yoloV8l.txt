@@ -1,0 +1,29 @@
+[property]
+gpu-id=0
+net-scale-factor=0.0039215697906911373
+model-color-format=0
+onnx-file=yolov8l.pt_bs_4_opset_16.onnx
+#model-engine-file=model_b4_gpu0_int8.engine #for int8
+model-engine-file=model_b4_gpu0_fp16.engine
+#int8-calib-file=calib.table #for int8
+labelfile-path=labels.txt
+batch-size=4
+network-mode=2 #1 for int8, #2 for fp16
+num-detected-classes=80
+interval=0
+gie-unique-id=1
+process-mode=1
+network-type=0
+cluster-mode=2
+maintain-aspect-ratio=0
+symmetric-padding=1
+#workspace-size=2000
+parse-bbox-func-name=NvDsInferParseYolo
+#parse-bbox-func-name=NvDsInferParseYoloCuda
+custom-lib-path=nvdsinfer_custom_impl_Yolo/libnvdsinfer_custom_impl_Yolo.so
+engine-create-func-name=NvDsInferYoloCudaEngineGet
+
+[class-attrs-all]
+nms-iou-threshold=0.45
+pre-cluster-threshold=0.25
+topk=300
