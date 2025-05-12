@@ -14,7 +14,7 @@ nvbuf-memory-type=0
 [source0]
 enable=1
 type=3
-uri=file://<filedir1>
+uri=file:///home/jetson/code/DeepStream-Yolo/vids/saf_recycle.mp4
 num-sources=1
 gpu-id=0
 cudadec-memtype=1
@@ -22,7 +22,7 @@ cudadec-memtype=1
 [source1]
 enable=1
 type=3
-uri=file://<filedir2>
+uri=file:///home/jetson/code/DeepStream-Yolo/vids/detectionxx_1.mp4
 num-sources=1
 gpu-id=0
 cudadec-memtype=1
@@ -30,7 +30,7 @@ cudadec-memtype=1
 [source2]
 enable=1
 type=3
-uri=file://<filedir3>
+uri=file:///home/jetson/code/DeepStream-Yolo/vids/detectionxx_2.mp4
 num-sources=1
 gpu-id=0
 cudadec-memtype=1
@@ -38,7 +38,7 @@ cudadec-memtype=1
 [source3]
 enable=1
 type=3
-uri=file://<filedir4>
+uri=file:///home/jetson/code/DeepStream-Yolo/vids/detectionxx_3.mp4
 num-sources=1
 gpu-id=0
 cudadec-memtype=1
@@ -66,18 +66,13 @@ text-color=1;1;1;1;
 text-bg-color=0.3;0.3;0.3;1
 font=Serif
 show-clock=0
+process-mode=0
 display-text=1
 clock-x-offset=800
 clock-y-offset=820
 clock-text-size=12
 clock-color=1;0;0;0
 nvbuf-memory-type=0
-display-fps=1
-fps-x-offset=10
-fps-y-offset=10
-fps-text-size=15
-fps-color=1;1;1;1.
-
 
 
 [streammux]
